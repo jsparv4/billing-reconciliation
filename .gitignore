@@ -1,0 +1,22 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+
+# VS / Rider
+.vs/
+.idea/
+
+# OS
+.DS_Store
+
+# local db + secrets
+billing.db
+*.db-shm
+*.db-wal
+
+# app secrets
+appsettings.Development.json
