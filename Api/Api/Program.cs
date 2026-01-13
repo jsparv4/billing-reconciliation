@@ -18,6 +18,8 @@ builder.Services.AddDbContext<BillingDbContext>(opt =>
 
 // Services (business logic)
 builder.Services.AddScoped<InvoiceGenerator>();
+builder.Services.AddScoped<Reconciler>();
+
 
 // Swagger
 builder.Services.AddEndpointsApiExplorer();
@@ -42,5 +44,6 @@ app.MapGet("/health", () => Results.Ok(new { ok = true }));
 app.MapAccounts();
 app.MapTransactions();
 app.MapInvoices();
+app.MapReconciliation();
 
 app.Run();
