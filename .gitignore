@@ -15,6 +15,7 @@ obj/
 
 # local db + secrets
 billing.db
+*.db
 *.db-shm
 *.db-wal
 
